@@ -1,0 +1,44 @@
+main {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #verticalContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+
+    section {
+      display: flex;
+      
+      &.left-section {
+        flex-direction: column;
+        height: 400vh;
+      }
+
+      &.right-section {
+        flex-direction: column-reverse;
+        height: 400vh;
+      }
+
+      article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 100vh;
+        border: 1px solid black;
+        font-size: 40px;
+      }
+    }
+  }
+
+  footer {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  position: relative;
+  z-index: 0;
+  font-size: 10vmin;
+}
+
+.site-main {
+  position: relative;
+  padding: 20px;
+  min-height: 200vh;
+  z-index: 100;
+  background-color: orange;
+}
+
+.site-main h1 {
+  font-size: 10vmin;
+}
+
+.site-main p {
+  font-size: 24px;
+}
+
+footer {
+  .panel {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+
+  .dark {
+    background-color: rgb(39, 37, 37);
+    color: aquamarine;
+  }
+
+  .blue {
+    background-color: aquamarine;
+    color: rgb(39, 37, 37);
+  }
+}
